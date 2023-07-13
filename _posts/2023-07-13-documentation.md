@@ -23,7 +23,8 @@ Enter 'y' for all the following questions.
 
 * In conf.py, add the extensions you require in the `extensions` list which would initially be empty. <br>
 We have used the following to build the entire documentation: <br>
-```extensions = [
+```
+extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
@@ -39,7 +40,8 @@ We have used the following to build the entire documentation: <br>
     'sphinx_panels',
     'numpydoc',
     'sphinx_copybutton'
-]```
+]
+```
 
 * Choose the theme of your choice<br>
 Inside conf.py, you can set the `html_theme` to any of your choice from the [Sphinx themes](https://sphinx-themes.org/). <br>

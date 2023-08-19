@@ -1,6 +1,7 @@
 ---
 title: Setting up Gallery of Examples
 layout: post
+post-image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Vega_Sample_Graphs_Collage.png"
 description: In today's fast-paced software development landscape, creating comprehensive and illustrative documentation is crucial for ensuring that users can effectively understand and utilize your software. One powerful way to enhance documentation is by integrating example galleries that showcase the capabilities of one's library or software package. In this blog post, we will explore a creative solution to achieve this by utilizing pure Python scripts, reStructuredText (reST) markup, and Jupyter Notebooks.
 tags:
 - Gallery of Examples

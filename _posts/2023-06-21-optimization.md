@@ -2,19 +2,14 @@
 title: Optimization of Code
 layout: post
 post-image: "https://m.media-amazon.com/images/I/41OMvm3ucaL._SX300_SY300_QL70_FMwebp_.jpg"
-description: In the world of data analysis and machine learning, efficiency is often a key concern. The HOI (Higher Order Information) repository, a powerful tool for studying information dynamics, presents an interesting case study in optimizing computation processes. By default, the `ent_g` function inside the HOI repo computed the entropy over the two last axes (n_variables, n_features, n_samples). This approach was used to avoid loops. This task is to use `jax.vmap()` in the implementation and compare the two approaches for computation times.
+description: The information-theoretical quantity known as the O-information (short for "information about Organisational structure") is used to characterise statistical interdependencies within multiplets of three and more variables. It enables us to determine the nature of the information, i.e. whether multiplets are primarily carrying redundant or synergistic information, in addition to quantifying how much information multiplets of brain areas are carrying. It takes an extensive amount of computation to estimate HOIs. The O-information is a perfect choice to estimate HOIs in a timely manner because its computational cost just requires basic quantities like entropies. There is yet no neuroinformatic standard of merit for HOI estimation that can be used by aficionados of all skill levels in a reasonable amount of time.
 tags:
 - sample
 - post
 - test
 ---
-The information-theoretical quantity known as the O-information (short for "information about Organisational structure") is used 
-to characterise statistical interdependencies within multiplets of three and more variables. It enables us to determine the nature of 
-the information, i.e., whether multiplets are primarily carrying redundant or synergistic information, in addition to quantifying how 
-much information multiplets of brain areas are carrying.
-It takes an extensive amount of computation to estimate HOIs. The O-information is a perfect choice to estimate HOIs in a timely manner
-because its computational cost just requires basic quantities like entropies. There is yet no neuroinformatic standard of merit for HOI 
-estimation that can be used by aficionados of all skill levels in a reasonable amount of time.
+### Introduction to task
+In the world of data analysis and machine learning, efficiency is often a key concern. The HOI (Higher Order Information) repository, a powerful tool for studying information dynamics, presents an interesting case study in optimizing computation processes. By default, the `ent_g` function inside the HOI repo computed the entropy (required to calculate o-information) over the two last axes (n_variables, n_features, n_samples). This approach was used to avoid loops. This task is to use `jax.vmap()` in the implementation and compare the two approaches for computation times.
 
 ### Criteria to keep in mind
 1. Ensuring Result Consistency

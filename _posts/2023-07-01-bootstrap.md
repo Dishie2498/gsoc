@@ -78,6 +78,7 @@ for i in range(n_boots):
   return p5, p95
 ```
 ### Complete code as a function `bootci`
+
 ```
 def bootci(x, n_boots):
   minsize = 3
@@ -115,5 +116,6 @@ def bootci(x, n_boots):
   plt.axvline(np.nanpercentile(final, 75), color='k', lw=2, ls='--')
   return p5, p95
 ```
+
 ### Confidence Interval Plotted by the function
 [bootci](https://drive.google.com/file/d/1KYHIqkFJtTusK0Aj3tOxmyRhiWrTWMgm/view?usp=sharing)

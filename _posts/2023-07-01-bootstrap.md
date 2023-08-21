@@ -126,4 +126,4 @@ def bootci(x, n_boots):
 ```
 
 ### Confidence Interval Plotted by the function
-[bootci](https://drive.google.com/file/d/1KYHIqkFJtTusK0Aj3tOxmyRhiWrTWMgm/view?usp=sharing)
+[bootci](../assets/images/bootci.png)

@@ -28,21 +28,26 @@ With the resampled metric values, we can estimate confidence intervals to quanti
 ### Code for bootci
 #### Step-by-step explanation of the code
 1. Generating all possible combinations of given size of multiplets
+   
 ```
 for msize in range(minsize, maxsize + 1):
     # generate combinations
     n_features=x.shape[1]
     combs = combinations(n_features+1, msize)
 ```
+
 2. Resampling input x for each combination nboot times <br>
    eg. x = [1,2,3] <br>
    resampled_x = [1, 2 ,1] , [3, 3, 1] , etc
+   
 ```
 for i in range(n_boots):
       part = resample(x.T, n_samples=x.shape[2], random_state=0 + i).T ## reshaping of x : make correction (transpose)
 
 ```
+
 3. Calculate the oinfo using the resampled part for each combination and keep appending the value of oinfo to a list
+   
 ```
       # copnorm and demean the resampled partition
       part = copnorm_nd(part.copy(), axis=0)
@@ -58,7 +63,9 @@ for i in range(n_boots):
       flattened_list = list(itertools.chain.from_iterable(np.asarray(_oinfo)))
       val.extend(flattened_list)
 ```
+
 4. Calculating the 5th and 95th percentile of the oinfo and plotting the results.
+   
 ```
     ci = np.stack(val,axis=0)
     # oinfo values within [0.05, 0.95] of bounds
@@ -77,6 +84,7 @@ for i in range(n_boots):
   plt.axvline(np.nanpercentile(final, 75), color='k', lw=2, ls='--')
   return p5, p95
 ```
+
 ### Complete code as a function `bootci`
 
 ```

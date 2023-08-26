@@ -1,8 +1,11 @@
 ---
-title: Bootstrap
+title: Assessing the robustness of HOI using bootstrap  
 layout: post
 post-image: "https://i.stack.imgur.com/f6pXo.png"
-description: Implementation of the boostraps for selecting significant multiplets + confidence interval estimation.
+description: The bootstrap method involves repeatedly resampling the dataset with replacement to simulate multiple datasets. By analyzing these resampled datasets, one can gain insights into the variability of statistics, such as mean, variance, or in this case, the significance of multiplets. This technique is particularly useful when the underlying distribution is complex or unknown.
+
+In this project, the primary goal is to identify the multiplets that have a substantial impact on the dataset based on statistical significance. The bootstrap approach will provide a more robust way of identifying these multiplets compared to traditional methods. Additionally, confidence interval estimation will be integrated into the process, allowing for a better understanding of the range of possible values for the multiplet significance.
+
 tags:
 - bootsrap
 - confidence intervals
@@ -22,8 +25,6 @@ With the resampled metric values, we can estimate confidence intervals to quanti
 the metric. One common approach is to calculate the percentiles of the resampled metric values. For example, computing 
 the 5th and 95th percentiles will give a 90% confidence interval. These percentiles represent the lower and upper 
 bounds of the confidence interval, respectively.
-### - Compute Confidence Intervals
-With the resampled metric values, we can estimate confidence intervals to quantify the uncertainty associated with the metric. One common approach is to calculate the percentiles of the resampled metric values. For example, computing the 5th and 95th percentiles will give a 90% confidence interval. These percentiles represent the lower and upper bounds of the confidence interval, respectively.
 
 ### Code for bootci
 #### Step-by-step explanation of the code
@@ -127,3 +128,5 @@ def bootci(x, n_boots):
 
 ### Confidence Interval Plotted by the function
 ![bootci](../assets/images/bootci.png)
+
+Here, the `number of times a particular oinfo value occurs (frequency of oinfo)` is plotted against the `oinfo`. The black dotted plots are the `p5` (5th percentile) and `p95` (95th percentile) of the values of oinfo. These give a 90% confidence interval of the oinfo range.

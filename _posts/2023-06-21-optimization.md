@@ -1,5 +1,5 @@
 ---
-title: Optimization of Code
+title: Optimization of entropy calculations
 layout: post
 post-image: "https://m.media-amazon.com/images/I/41OMvm3ucaL._SX300_SY300_QL70_FMwebp_.jpg"
 description: The information-theoretical quantity known as the O-information (short for "information about Organisational structure") is used to characterise statistical interdependencies within multiplets of three and more variables. It enables us to determine the nature of the information, i.e. whether multiplets are primarily carrying redundant or synergistic information, in addition to quantifying how much information multiplets of brain areas are carrying. It takes an extensive amount of computation to estimate HOIs. The O-information is a perfect choice to estimate HOIs in a timely manner because its computational cost just requires basic quantities like entropies. There is yet no neuroinformatic standard of merit for HOI estimation that can be used by aficionados of all skill levels in a reasonable amount of time.
@@ -27,6 +27,7 @@ Memory utilization is a critical consideration, especially when dealing with lar
 - With vmap, we can apply a function to a batch of inputs, eliminating the need for explicit looping. This not only simplifies the code but also significantly improves performance, especially when dealing with large datasets or complex computations.
 
 ### Original code (Tensor implementation)
+> The following piece of code computes the entropy on a multidimensional array over the two last axes :
 
 ```
 @partial(jax.jit, static_argnums=1)
@@ -57,6 +58,7 @@ def ent_tensor(x: jnp.array, biascorrect: bool=True) -> jnp.array:
 ```
 
 ### Vmap implementation
+> The following piece of code computes the entropy on a two dimensional array and the `jax.vmap` generalizes the computations to a 3D array :
 
 ```
 @partial(jax.jit, static_argnums=1)
@@ -90,6 +92,10 @@ ent_vector_vmap= jax.vmap(ent_vector)
 
 ### Following is the comparison in computation times between tensor and vmap implementation 
 ![comparison graph](../assets/images/vmap.png)
+
+- Here the blue line represents the computation time for the vmapped implementation while the red line represents the tensor version.
+- The first graph has varying number of n_samples on the x axis and the second graph has n_variables as the changing parameters.
+- The constant time taken for computation by the vammped implementation even with a large increase i size of input data is a result of its **ust-In-Time (JIT) compilation** and **parallel computing**.
 
 ### Following PRs implement vmap in calculating o-information
 - [Pull request #6](https://github.com/brainets/hoi/pull/6)

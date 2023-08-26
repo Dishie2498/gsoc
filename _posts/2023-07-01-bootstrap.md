@@ -2,9 +2,7 @@
 title: Assessing the robustness of HOI using bootstrap  
 layout: post
 post-image: "https://i.stack.imgur.com/f6pXo.png"
-description: The bootstrap method involves repeatedly resampling the dataset with replacement to simulate multiple datasets. By analyzing these resampled datasets, one can gain insights into the variability of statistics, such as mean, variance, or in this case, the significance of multiplets. This technique is particularly useful when the underlying distribution is complex or unknown.
-
-In this project, the primary goal is to identify the multiplets that have a substantial impact on the dataset based on statistical significance. The bootstrap approach will provide a more robust way of identifying these multiplets compared to traditional methods. Additionally, confidence interval estimation will be integrated into the process, allowing for a better understanding of the range of possible values for the multiplet significance.
+description: The bootstrap method involves repeatedly resampling the dataset with replacement to simulate multiple datasets. By analyzing these resampled datasets, one can gain insights into the variability of statistics, such as mean, variance, or in this case, the significance of multiplets. This technique is particularly useful when the underlying distribution is complex or unknown. In this project, the primary goal is to identify the multiplets that have a substantial impact on the dataset based on statistical significance. The bootstrap approach will provide a more robust way of identifying these multiplets compared to traditional methods. Additionally, confidence interval estimation will be integrated into the process, allowing for a better understanding of the range of possible values for the multiplet significance.
 
 tags:
 - bootsrap

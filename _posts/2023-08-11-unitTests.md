@@ -1,7 +1,7 @@
 ---
 title: A Dive into Unit Testing and Code Quality
 layout: post
-post-image: "https://m.media-amazon.com/images/I/41OMvm3ucaL._SX300_SY300_QL70_FMwebp_.jpg"
+post-image: "https://miro.medium.com/v2/resize:fit:1400/1*Jc4lH-woN65-WjxDyK6img.jpeg"
 description: In this blog post, we’ll delve into two essential practices that contribute to robust code - unit testing and code formatting
 tags:
 - Smoke tests

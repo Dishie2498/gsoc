@@ -9,26 +9,16 @@
                 </div>
                 <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
                     <p>
-                        Modern hypotheses in neuroscience suggest that the information about the world, body movements or higher-level cognition are encoded by large groups of neurons. Activity patterns of neurons have so far been examined both single and pairs. Still, it remains largely unexplored how and which information is encoded by larger groups of neurons. Higher order interactions (HOIs), or non-pairwise interactions between neurons, are being studied in an effort to understand how the information is encoded by multiplets of neurons i.e. groups of 3, 4, ..., N neurons. Mathematical breakthrough in the field of information theory recently introduced a measure called the "organisational structure" (O-info) to quantify and characterize the information carried by multiplets. However, measuring HOIs is complex because of the possible number of multiplets. For example, with 10 neurons, 720 triplets, 5040 quadraplets and 30,240 quintuplets have to be computed. The goal of my project was to implement and optimize the computation of HOIs using a recent library called Jax. Here are some key advantages of JAX over NumPy:
-- <b>GPU/TPU Acceleration</b>: JAX integrates with accelerators like GPUs and TPUs, allowing us to perform computations on these devices without requiring extensive modifications to the code. NumPy, on the other hand, doesn't provide this level of hardware acceleration by default. <br>
+                        Modern hypotheses in neuroscience suggest that the information about the world, body movements or higher-level cognition are encoded by large groups of neurons. Activity patterns of neurons have so far been examined both single and pairs. Still, it remains largely unexplored how and which information is encoded by larger groups of neurons. Higher order interactions (HOIs), or non-pairwise interactions between neurons, are being studied in an effort to understand how the information is encoded by multiplets of neurons i.e. groups of 3, 4, ..., N neurons. Mathematical breakthrough in the field of information theory recently introduced a measure called the "organisational structure" (O-info) to quantify and characterize the information carried by multiplets. However, measuring HOIs is complex because of the possible number of multiplets. For example, with 10 neurons, 720 triplets, 5040 quadraplets and 30,240 quintuplets have to be computed. The goal of my project was to implement and optimize the computation of HOIs using a recent library called Jax. Here are some key advantages of JAX over NumPy:<br>
+<b>GPU/TPU Acceleration</b>: JAX integrates with accelerators like GPUs and TPUs, allowing us to perform computations on these devices without requiring extensive modifications to the code. NumPy, on the other hand, doesn't provide this level of hardware acceleration by default. <br>
 
-- <b>Function JIT Compilation</b>: JAX uses Just-In-Time (JIT) compilation to speed up computations. This means that functions are compiled for execution only during their first run, resulting in significant performance improvements, especially for repeated calculations, since lesser code remains to compile each time. <br>
+<b>Function JIT Compilation</b>: JAX uses Just-In-Time (JIT) compilation to speed up computations. This means that functions are compiled for execution only during their first run, resulting in significant performance improvements, especially for repeated calculations, since lesser code remains to compile each time. <br>
 
-- <b>Parallelism and Concurrency</b>: JAX offers primitives for parallel and concurrent execution, which improves the efficiency of computations on multi-core systems. <br>
+<b>Parallelism and Concurrency</b>: JAX offers primitives for parallel and concurrent execution, which improves the efficiency of computations on multi-core systems. <br>
 
-- <b>Interoperability with NumPy</b>: While JAX has its own array library, it's designed to be compatible with NumPy. This means we can often replace NumPy arrays with JAX arrays in our code, leveraging JAX's advantages without a complete rewrite. <br>
+<b>Interoperability with NumPy</b>: While JAX has its own array library, it's designed to be compatible with NumPy. This means we can often replace NumPy arrays with JAX arrays in our code, leveraging JAX's advantages without a complete rewrite. <br>
 
-- <b>Transformations and Compilers</b>: JAX enables program transformations through its `jit`, `vmap`, and `grad` functions. These allow you to optimize, vectorize, and differentiate functions more efficiently. <br>
-</p>
-
-<a href="https://github.com/brainets/hoi">Github repo of hoi</a>
-
-<h2>To the mentors,</h2>
-<h3>Etienne Combrisson, postdoc researcher in the Institute of Neuroscience of la Timone in marseille, France (twitter: @kNearNeighbors)</h3>
-<h3>Prof. Daniele Marinazzo, professor in the department of Data Analysis at Ghent University, Belgium, (tweeter: @dan_marinazzo)</h3>
-<p>
-I wanted to express my sincere gratitude for your guidance, support, and mentorship throughout the Google Summer of Code program. Your expertise and patience have been invaluable in helping me navigate challenges and grow as a developer. I am truly grateful for this incredible learning experience and the opportunity to work under your guidance. Thank you for your time, insights, and dedication throughout the project!
-
+<b>Transformations and Compilers</b>: JAX enables program transformations through its `jit`, `vmap`, and `grad` functions. These allow you to optimize, vectorize, and differentiate functions more efficiently. <br>
 </p>
                     <br>
                     <div class="container columns is-centered">

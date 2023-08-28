@@ -73,8 +73,10 @@ make html
 You can host `index.html` locally to see your documentation on localhost.
 
 ## Tutorial Video
-<figure class="video_container">
+<!-- <figure class="video_container">
   <iframe src="https://drive.google.com/file/d/11kjhMHtKuwCT8kFiw5ttyjig2HDlOefd/view?usp=sharing" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 <iframe width="420" height="315" src="https://drive.google.com/file/d/11kjhMHtKuwCT8kFiw5ttyjig2HDlOefd/view?usp=sharing" frameborder="0" allowfullscreen></iframe>
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=EHCGAZBbB88&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj" frameborder="0" allowfullscreen></iframe> 
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=EHCGAZBbB88&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj" frameborder="0" allowfullscreen></iframe>  -->
+
+[![Watch the video](../assets/images/docx.png)](https://drive.google.com/file/d/11kjhMHtKuwCT8kFiw5ttyjig2HDlOefd/view?usp=sharing)
